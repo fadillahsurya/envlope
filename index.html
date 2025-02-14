@@ -310,21 +310,21 @@
 
         /* Photo Section */
         .photo-section {
-            margin-top: 50px;
+            margin-top: 30px; /* Jarak antara amplop dan foto */
             text-align: center;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 20px;
-            width: 80%;
-            max-width: 600px;
+            width: 280px; /* Sesuaikan dengan lebar amplop */
+            max-width: 100%;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
         }
 
         .photo-section img {
-            width: 100%;
-            height: auto;
+            width: 100%; /* Lebar foto mengikuti container */
+            height: auto; /* Tinggi disesuaikan secara otomatis */
             aspect-ratio: 3 / 4; /* Rasio 3:4 */
-            object-fit: cover;
+            object-fit: cover; /* Memastikan foto menutupi area */
             border-radius: 15px;
             border: 5px solid var(--color-env);
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -335,11 +335,6 @@
             font-size: 1.5em;
             margin-top: 10px;
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Scrollable Body */
-        body {
-            overflow-y: auto;
         }
     </style>
 </head>
@@ -371,6 +366,7 @@
             <div class="love-icon">❤️</div>
         </div>
     </div>
+
     <div class="reset">
         <button id="open">Open Envelope</button>
         <button id="reset">Close Envelope</button>
@@ -384,7 +380,7 @@
     <!-- Photo Section -->
     <div class="photo-section">
         <img src="assets/IMG_3445.JPG" alt="Your Photo">
-        <p>With love, [Your Name]</p>
+        <p>With you, [My Love]</p>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
